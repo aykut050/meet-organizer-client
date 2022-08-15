@@ -57,7 +57,7 @@ function Table() {
                             <td className="text-center">{element.finish_time}</td>
                             <td className="text-center">{element.participants}</td>
                             <td className="d-flex justify-content-center">
-                                <button onClick={() => editMeet(element._id.$oid)} className="btn btn-info">Düzenle</button>
+                                <button onClick={() => editMeet(element._id.$oid)} className="btn btn-info me-3">Düzenle</button>
                                 <button onClick={() => deleteMeet(element._id.$oid)} className="btn btn-danger">Sil</button>
                             </td>
                         </tr>
