@@ -12,7 +12,7 @@ function Table() {
     },[]);
 
     const getMeets = async () => {
-        axios.get('http://127.0.0.1:5000', {
+        axios.get('https://meet-organizer-api.herokuapp.com/', {
         }).then( (res) => {
             const response = JSON.parse(res.data) 
             setMeet(response)
