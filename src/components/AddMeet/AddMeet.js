@@ -18,7 +18,7 @@ function AddMeet() {
             finish_time: finishDate,
             participants: participants
         }
-        await axios.post(`https://meet-organizer-api.herokuapp.com//add-meet`, { meet })
+        await axios.post(`http://127.0.0.1:5000/add-meet`, { meet })
             .then(response => {
                 alert(response.data.message)
                 navigate('/')
